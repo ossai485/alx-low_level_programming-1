@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _strncat - cocatenates 2 strings
+ * _strncat - concatenates 2 strings
  * @dest: input parameter string
  * @src: input parameter string
  * @n: times to iterations
@@ -21,7 +21,7 @@ char *_strncat(char *dest, char *src, int n)
 		a++;
 	}
 
-	b = 0
+	b = 0;
 
 		while (src[b] != 0 && b < n)
 		{
