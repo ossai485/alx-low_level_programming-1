@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _strncat - concatenates 2 strings
+ * _strncat - concatenates two strings
  * @dest: input parameter string
  * @src: input parameter string
  * @n: times to iterations
@@ -28,6 +28,12 @@ char *_strncat(char *dest, char *src, int n)
 			dest[a] = src[b];
 			a++;
 			b++;
+		}
+
+		if (n > 0)
+
+		{
+			dest = 0;
 		}
 
 	return (dest);
