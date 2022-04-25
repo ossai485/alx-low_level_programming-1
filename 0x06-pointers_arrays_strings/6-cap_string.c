@@ -1,6 +1,6 @@
 #include "main.h"
 
-/*8
+/**
  * cap_string - capitalizingall words of a string
  * @str: the stringto change
  *
@@ -19,9 +19,9 @@ char *cap_string(char *str)
 	while (str[i] != '\0')
 
 	{
-		if (i == 0 && str[i] >=97 && str[i] <= 122)
+		if (i == 0 && str[i] >= 97 && str[i] <= 122)
 		{
-			str[i] = str[i] -32;
+			str[i] = str[i] - 32;
 		}
 
 		j = 0;
@@ -29,7 +29,7 @@ char *cap_string(char *str)
 		while (c[j] != '\0')
 
 		{
-			if (c[j] == str[i] && (str[i + 1] >= 97&& str[i + 1] <= 122))
+			if (c[j] == str[i] && (str[i + 1] >= 97 && str[i + 1] <= 122))
 			{
 				str[i + 1] = str[i + 1] - 32;
 			}
