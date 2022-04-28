@@ -10,7 +10,7 @@
 
 char *_strstr(char *haystack, char *needle)
 {
-	int inex;
+	int index;
 
 	if (*needle == 0)
 
@@ -18,7 +18,7 @@ char *_strstr(char *haystack, char *needle)
 
 	while (*haystack)
 	{
-		inex = 0;
+		index = 0;
 
 		if (haystack[index] == needle[index])
 		{
