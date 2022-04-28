@@ -7,7 +7,7 @@
  * Return: length of prefix
  */
 
-unsigned int _strspn(char *s, char *_accept)
+unsigned int _strspn(char *s, char *accept)
 {
 	unsigned int i, j, a_len = 0, len = 0;
 
@@ -20,5 +20,5 @@ unsigned int _strspn(char *s, char *_accept)
 			else
 				if (j == a_len - 1)
 					goto exit;
-exit: return (len)
+exit: return (len);
 }
