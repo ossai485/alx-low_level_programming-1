@@ -21,7 +21,6 @@ int long_1(char *s)
  * compare - main - check the code
  * @s: number
  * @l: length
- * 
  * Return: always 0.
  */
 
@@ -55,5 +54,7 @@ int is_palindrome(char *s)
 	int l;
 
 	l = long_1(s);
+
 	return (compare(s, l));
+
 }
