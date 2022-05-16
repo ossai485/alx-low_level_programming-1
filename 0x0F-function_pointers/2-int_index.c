@@ -6,8 +6,7 @@
  * @array: name passed
  * @size: nuber of iterations
  * @cmp: points to function
- * return: nothing
- *
+ * Return: Returns nothing
  */
 
 int int_index(int *array, int size, int (*cmp)(int))
