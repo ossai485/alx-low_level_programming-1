@@ -1,6 +1,6 @@
 #include <stdlib.h>
 #include <string.h>
-#include "main.h"
+#include "lists.h"
 
 /**
  * add_node_end - adds a new node
