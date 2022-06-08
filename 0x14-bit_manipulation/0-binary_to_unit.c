@@ -4,28 +4,29 @@
 
 /**
  * _strlen - find the length of a string
- * @s: pointer to the string 
+ * @s: pointer to the string to check
  * Return: void
- */
+*/
+
 
 int _strlen(const char *s)
 {
-	int i = 0;
+int i = 0;
+while (s[i])
+	i++;
 
-	while (s[i])
-		i++;
-
-	return (i);
+return (i);
 }
 
+
 /**
- * binary_to_unit - converts a binary to unsigned int
+ * binary_to_uint - converts a binary number to an unsigned int
  * @b: binary number
  *
  * Return: 0 or converted number
  */
 
-unsigned int binary_to_unit(const char *b)
+unsigned int binary_to_uint(const char *b)
 {
 	unsigned int n = 0;
 	int i, len;
@@ -39,11 +40,9 @@ unsigned int binary_to_unit(const char *b)
 	{
 		if (b[len - i - 1] == '1')
 			n += 1 << i;
-
 		else if (b[len - i - 1] != '0')
 			return (0);
 	}
 
 	return (n);
-
 }
